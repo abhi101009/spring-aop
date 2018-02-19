@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-@Order(1)//define order of Adviceto be execute
+@Order(1)//define order of Advice to be execute
 public class BeforeAspect {
 	
 	//@Before("execution(public void addAccount(String))")  for any addAccount method
