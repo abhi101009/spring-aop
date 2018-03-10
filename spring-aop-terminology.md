@@ -45,7 +45,34 @@ along with advice as a expression.
  @Pointcut("within(com.aminfo.dao.*)")
  public void daoDataPointcut(){}
  ```
- 
- 
+# What is weaving?
+It is a process of linking the Aspect with other advised object.
+This can be done by Compile time, load time or at run time. 
+Spring AOP uses run time weaving.
+
+# Required dependencies for AOP?
+```xml
+<dependency>
+ <groupid> org.aspectj </groupid>
+ <artifactid>aspectjrt </artifactid>
+ <version>1.7.4</version>
+ <scope>runtime</scope>
+</dependency>
+
+```
+
+# How to Enable AspectJ in Spring?
+In xml based configuration
+define xml namespace as `xmlns:aop="http://www.springframework.org/schema/aop`
+& schemaLocation or xsd as `http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd`
+
+Now enable AspectJ atyle of spring AOP
+```xml
+<aop:aspectj-autoproxy />
+```
+
+In Annotation base configuration
+`@EnableAspectJAutoProxy`
+
  
  
