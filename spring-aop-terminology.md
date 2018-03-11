@@ -62,7 +62,8 @@ Spring AOP uses run time weaving.
 ```
 
 # How to Enable AspectJ in Spring?
-In xml based configuration
+
+#### In xml based configuration
 define xml namespace as `xmlns:aop="http://www.springframework.org/schema/aop`
 & schemaLocation or xsd as `http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd`
 
@@ -71,8 +72,10 @@ Now enable AspectJ atyle of spring AOP
 <aop:aspectj-autoproxy />
 ```
 
-In Annotation base configuration
+#### In Annotation base configuration
+
 `@EnableAspectJAutoProxy`
+
 
  
  
