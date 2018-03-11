@@ -15,19 +15,19 @@ Advice is an action taken for a perticular join point. In terms of programming I
 certain join point with matches pointcut reaches in the application.
 
 In Spring AOP 5 type of advices available 
-# 1. `@Before` 
+#### 1. `@Before` 
 This advice will be execute before join point method execution.
 
-# 2. `@After` 
+#### 2. `@After` 
 This advice will be execute after join point finally block execution.
 
-# 3. `@AfterReturning`
+#### 3. `@AfterReturning`
 This advice will be execute after join point method return value.
 
-# 4. `@AfterThrowing`
+#### 4. `@AfterThrowing`
 This advice will be execute when join point method throws exception.
 
-# 5. `@Around`
+#### 5. `@Around`
 This advice is capable to execute crosscut concern after before or even is exception at this advice is responsible to 
 invoke join point method.
 
@@ -64,8 +64,11 @@ Spring AOP uses run time weaving.
 # How to Enable AspectJ in Spring?
 
 #### In xml based configuration
-define xml namespace as `xmlns:aop="http://www.springframework.org/schema/aop`
-& schemaLocation or xsd as `http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd`
+add xml namespace as 
+`xmlns:aop="http://www.springframework.org/schema/aop`
+
+& schemaLocation or xsd as 
+`http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd`
 
 Now enable AspectJ atyle of spring AOP
 ```xml
